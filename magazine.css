@@ -1,11 +1,5 @@
 
 
-@font-face {
-    font-family: "antigoni";
-    src: url(fonts/antigoni.otf);
-}
-
-
 body {
     background-color: white;
     margin: 0px;
@@ -13,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    font-family: 'antigoni';
+    font-family:Helvetica, sans-serif;
 }
 
 #main {
@@ -63,7 +57,7 @@ body {
     align-items: center;
     vertical-align: middle;
     color: white;
-    font-family: 'bangla', Arial, serif;
+    font-family: Helvetica, sans-serif;
     font-size: 14vh;
 }
 
@@ -102,7 +96,7 @@ body {
     box-sizing: content-box;
     font-size: 33px;
     color: white;
-    font-family: 'antigoni';
+    font-family: Helvetica, sans-serif;
     text-align: left;
     vertical-align: top;
     align-self: center;
@@ -172,7 +166,7 @@ body {
     width: 150px;
     height: auto;
     margin: 20px;
-    font-family: 'bigCaslon', sans-serif;
+    font-family: Times, serif;
 }
 
 
