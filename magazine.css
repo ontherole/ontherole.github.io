@@ -1,18 +1,10 @@
 
-@font-face {
-    font-family: "bigCaslon";
-    src: url(fonts/BigCaslon.otf);
-}
 
 @font-face {
     font-family: "antigoni";
     src: url(fonts/antigoni.otf);
 }
 
-@font-face {
-    font-family: "bangla";
-    src: url(fonts/BanglaSangamMN-01.otf);
-}
 
 body {
     background-color: white;
@@ -21,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    font-family: 'antigoni';
 }
 
 #main {
@@ -104,11 +97,12 @@ body {
     width: 100%;
     height: auto;
 /*    padding-top: 30px;*/
+              
     display: flex;
     box-sizing: content-box;
     font-size: 33px;
     color: white;
-    font-family: 'bangla';
+    font-family: 'antigoni';
     text-align: left;
     vertical-align: top;
     align-self: center;
