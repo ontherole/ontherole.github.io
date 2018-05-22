@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>ON THE ROLE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ontherole-website.css">
+
+    
+        <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+<!--
+        <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/slick-1.8.0/slick/slick.min.js"></script>
+        <script language="javascript" type="text/javascript" src="libraries/p5.scribble.js"></script>
+-->
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+    <script type="text/javascript">
+        google.load("jquery", "1.3");
+        google.setOnLoadCallback(function() {
+            jQuery(function($) {
+
+            });
+        });
+        
+            function myshow() {
+                $("#front").stop().animate({
+                    height: '85%',
+                }, 150, 'swing');
+
+                $("#back").stop().animate({
+                    height: '15%',
+                }, 150, 'swing');
+
+                $("#editorial2").stop().animate({
+                    'padding-top': '400px',
+                }, 150, 'swing');
+//                document.getElementById('ontherolemarquee').stop().start();
+            }
+
+            function myhide() {
+                $("#front").stop().animate({
+                    height: '20%',
+                }, 150, 'swing');
+
+                $("#back").stop().animate({
+                    height: '80%',
+                }, 150, 'swing');
+
+                $("#editorial2").stop().animate({
+                    'padding-top': '0px',
+                }, 150, 'swing');
+//                document.getElementById('ontherolemarquee').stop();
+            }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="images">
+        <img src="https://i.imgur.com/wG8qj1n.png" class="images-questions" id="image-pequeno" style="left:5vw; top: 60vh; width:300px;position: absolute;
+    z-index: 3000;">
+        <img src="https://i.imgur.com/wG8qj1n.png" id="image-pequeno2" style="left:73vw; top: 60vh; width:300px;position: absolute; z-index: 3000;">
+        <img src="https://i.imgur.com/Xxx61Fm.png" class="images-questions" id="image-medio" style="left:72vw; top:35vh;">
+        <img src="https://i.imgur.com/DXrSonR.png" class="images-questions" id="image-grande" style="left:5vw; top:30vh;">
+    </div>
+
+    <div id="main">
+        <div id="sticker"></div>
+
+
+        <div id="back">
+            <marquee id='OTRM' behavior="alternate" scrollamount="5" scrolldelay="200" loop="infinite" direction="right" onMouseOver="myhide()" onMouseOut="myshow()">
+                <div id="ontherolediv">ON THE ROLE ON THE ROLE ON THE ROLE ON THE ROLE</div>
+            </marquee>
+
+            <div id="editorial">
+                <div id="editorial2">On The Role is the discussion in mind. The agents of change itself are getting renewed. Established concepts dissolve into a more fluid modernity, where each element is faced with its own redefinition for a new social environment.<br> For feminism to reach its final completion, men need to get on board as soon as possible. Their role is crucial for the success of gender equality. In Issue 1 we question what’s their place right now and what part can they play in this fight.</div>
+            </div>
+        </div>
+
+
+        <div id="front">
+
+            <div id="bigbox2">
+                <div id="subtitles">
+                    <div id="subtitle-text">OF MEN IN FEMINIST STRUGGLES</div>
+                    <div id="subtitle-text">OF MEN IN FEMINIST STRUGGLES</div>
+                    <div id="subtitle-text">OF MEN IN FEMINIST STRUGGLES</div>
+                    <div id="subtitle-text">OF MEN IN FEMINIST STRUGGLES</div>
+                    <div id="subtitle-text">OF MEN IN FEMINIST STRUGGLES</div>
+                </div>
+
+
+                <div id="mainmain-coments">
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment1">
+                            <img src="coments/chimamanda/1.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>diivaXOXO diivaXOXO</b> <u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I respect both men and women. I don't have any problem with men overall... But I do have a problem with assholes. Which both some men and women can be sometimes.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment2">
+                            <img src="coments/kimmel/2.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Zamuroy</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">pretty much 90% of men out there are already fully on board with actual gender equality, just not with the crap that get's passed around as gender issues these days.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment3">
+                            <img src="coments/obama/3.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>A A</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not right wing or a conservative, but I think feminism is cancer. Women have equal rights to men, feminism today is no more than female supremacy and misandry. The only thing I see it used for is to silence opposition, claim the moral high ground, and allow people to be professional victims.
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment5">
+                            <img src="coments/steinmen/4.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Michelle Maffei</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">Love feminism, we need more women (and men too because of our paternal society, men get hit by women) into it. Every human being should know no one in this life will give you anything for free, one must fight for it to get it.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment4">
+                            <img src="coments/womens-lib/5.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>William R Hall</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text"> Now there is no choice. Most women must go to work and leave the children at child care.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment6">
+                            <img src="coments/like-a-girl/6.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Little Beauty</b><u> 6 meses atrás</u>
+                                </div>
+                                <div class="coments-text">#likeagirl</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment7">
+                            <img src="coments/chimamanda/7.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>ofonime udoessien</b><u> 7 meses atrás</u>
+                                </div>
+                                <div class="coments-text">I like this version of feminism</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment8">
+                            <img src="coments/kimmel/8.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>MichaeloooleahciM</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I don't understand how people are missing the message of this talk; it's about gender equality for both sexes, not females exclusively. I assume people have just applied their own narrative before listening to the whole talk. I will also note that it's based off of an accomplished sociologist on the topic, and how it reflects on the happiness of society.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment10">
+                            <img src="coments/obama/9.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Liam Lee</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm no conservative but I hate Obama for being a feminist. That's because feminism = man-hatred. Obama has proven that many times when he says "women are smarter than men!!1!".</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment9">
+                            <img src="coments/steinmen/10.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>WING SMITH</b><u> 10 meses atrás</u>
+                                </div>
+                                <div class="coments-text">FEMINAZI, FEMINAZI, FEMINAZI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment11">
+                            <img src="coments/womens-lib/11.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Eat U Raw</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">propaganda created to make woman feel like they need to stand their men, the idea behind is simple and easy, 50% of the society is female, they wasnt tax payers or working ants - feminism got created to push females into the worklife :)﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment13">
+                            <img src="coments/like-a-girl/12.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>chicken nugget 82</b><u> 2 meses atrás</u>
+                                </div>
+                                <div class="coments-text">Genders roles are horrible I like boy stuff but my mom tells me to stop but I don't it just makes me feel sad. Guys think that girls are weak but there not they don't run like that﻿</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment12">
+                            <img src="coments/chimamanda/1.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>diivaXOXO diivaXOXO</b> <u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I respect both men and women. I don't have any problem with men overall... But I do have a problem with assholes. Which both some men and women can be sometimes.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment14">
+                            <img src="coments/kimmel/2.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Zamuroy</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">pretty much 90% of men out there are already fully on board with actual gender equality, just not with the crap that get's passed around as gender issues these days.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment15">
+                            <img src="coments/obama/3.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>A A</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not right wing or a conservative, but I think feminism is cancer. Women have equal rights to men, feminism today is no more than female supremacy and misandry. The only thing I see it used for is to silence opposition, claim the moral high ground, and allow people to be professional victims.
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment18">
+                            <img src="coments/steinmen/4.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Michelle Maffei</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">Love feminism, we need more women (and men too because of our paternal society, men get hit by women) into it. Every human being should know no one in this life will give you anything for free, one must fight for it to get it.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment17">
+                            <img src="coments/womens-lib/5.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>William R Hall</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text"> Now there is no choice. Most women must go to work and leave the children at child care.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment16">
+                            <img src="coments/like-a-girl/6.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Little Beauty</b><u> 6 meses atrás</u>
+                                </div>
+                                <div class="coments-text">#likeagirl</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment19">
+                            <img src="coments/chimamanda/14.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Myelinator</b><u> 9 meses atrás</u>
+                                </div>
+                                <div class="coments-text">We should all be egalitarian, not feminist.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment20">
+                            <img src="coments/kimmel/15.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>s m</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">i'm all up for gender equality and sure woman have it crap. but not once did this guy say anything about how bad men have in situations. If you want GENDER equality , that means both genders should be equal.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment22">
+                            <img src="coments/obama/16.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Luna Bubbles</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I prefer to be egalitarian. It implies EQUALITY because it's inclusive.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment21">
+                            <img src="coments/steinmen/17.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Navy XA</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm NOT A FEMINIST,...because I believe in gender equality! I believe that women should be treated the same in every aspect of life, and women should treat men the same in every aspect of life! Truly honest women believe in gender equality,.....BUT feminists DO NOT believe in gender equality! It's very sad, but unfortunately their is no argument to be had there! Good luck being a feminist...............
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment23">
+                            <img src="coments/womens-lib/18.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Corky Sebastian-Mincer-Homo-Asshole-Butt-Pirate</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">U never see any hot chicks protesting, just ugly lezzers and mandatory Negroes. No wonder we laugh at the womens movement.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment25">
+                            <img src="coments/like-a-girl/19.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Toonish</b><u> 9 meses atrás</u>
+                                </div>
+                                <div class="coments-text">boys have as much pressure, we have to do everything right﻿</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment24">
+                            <img src="coments/chimamanda/20.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>XxNINJ4HOBOxX</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">Modern day feminism: "you can have an opinion, but if your opinion differs from mine, you can't have an opinion" ﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment26">
+                            <img src="coments/kimmel/21.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Thursday121am </b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">The patriarchy is the feminist version of the Illuminati.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment27">
+                            <img src="coments/obama/22.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Mr. Stonefallow</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not surprised Obama would label himself a feminist, his party essentially demands it.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment29">
+                            <img src="coments/steinmen/23.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Janki Jan</b><u> 1 mês atrás</u>
+                                </div>
+                                <div class="coments-text">Frankly, I feel ashamed because I being a man, did a lot of those things that she mentioned. Now I cannot change the society but I can definitely change myself. At least, I will try to. And I will raise my son and daughter appropriately, as individuals.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment30">
+                            <img src="coments/womens-lib/18.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Corky Sebastian-Mincer-Homo-Asshole-Butt-Pirate</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">U never see any hot chicks protesting, just ugly lezzers and mandatory Negroes. No wonder we laugh at the womens movement.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment1">
+                            <img src="coments/chimamanda/1.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>diivaXOXO diivaXOXO</b> <u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I respect both men and women. I don't have any problem with men overall... But I do have a problem with assholes. Which both some men and women can be sometimes.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment2">
+                            <img src="coments/kimmel/2.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Zamuroy</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">pretty much 90% of men out there are already fully on board with actual gender equality, just not with the crap that get's passed around as gender issues these days.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment3">
+                            <img src="coments/obama/3.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>A A</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not right wing or a conservative, but I think feminism is cancer. Women have equal rights to men, feminism today is no more than female supremacy and misandry. The only thing I see it used for is to silence opposition, claim the moral high ground, and allow people to be professional victims.
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment5">
+                            <img src="coments/steinmen/4.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Michelle Maffei</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">Love feminism, we need more women (and men too because of our paternal society, men get hit by women) into it. Every human being should know no one in this life will give you anything for free, one must fight for it to get it.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment4">
+                            <img src="coments/womens-lib/5.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>William R Hall</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text"> Now there is no choice. Most women must go to work and leave the children at child care.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment6">
+                            <img src="coments/like-a-girl/6.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Little Beauty</b><u> 6 meses atrás</u>
+                                </div>
+                                <div class="coments-text">#likeagirl</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment7">
+                            <img src="coments/chimamanda/7.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>ofonime udoessien</b><u> 7 meses atrás</u>
+                                </div>
+                                <div class="coments-text">I like this version of feminism</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment8">
+                            <img src="coments/kimmel/8.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>MichaeloooleahciM</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I don't understand how people are missing the message of this talk; it's about gender equality for both sexes, not females exclusively. I assume people have just applied their own narrative before listening to the whole talk. I will also note that it's based off of an accomplished sociologist on the topic, and how it reflects on the happiness of society.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment10">
+                            <img src="coments/obama/9.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Liam Lee</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm no conservative but I hate Obama for being a feminist. That's because feminism = man-hatred. Obama has proven that many times when he says "women are smarter than men!!1!".</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment9">
+                            <img src="coments/steinmen/10.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>WING SMITH</b><u> 10 meses atrás</u>
+                                </div>
+                                <div class="coments-text">FEMINAZI, FEMINAZI, FEMINAZI !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment11">
+                            <img src="coments/womens-lib/11.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Eat U Raw</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">propaganda created to make woman feel like they need to stand their men, the idea behind is simple and easy, 50% of the society is female, they wasnt tax payers or working ants - feminism got created to push females into the worklife :)﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment13">
+                            <img src="coments/like-a-girl/12.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>chicken nugget 82</b><u> 2 meses atrás</u>
+                                </div>
+                                <div class="coments-text">Genders roles are horrible I like boy stuff but my mom tells me to stop but I don't it just makes me feel sad. Guys think that girls are weak but there not they don't run like that﻿</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment12">
+                            <img src="coments/chimamanda/1.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>diivaXOXO diivaXOXO</b> <u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">I respect both men and women. I don't have any problem with men overall... But I do have a problem with assholes. Which both some men and women can be sometimes.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment14">
+                            <img src="coments/kimmel/2.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Zamuroy</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">pretty much 90% of men out there are already fully on board with actual gender equality, just not with the crap that get's passed around as gender issues these days.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment15">
+                            <img src="coments/obama/3.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>A A</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not right wing or a conservative, but I think feminism is cancer. Women have equal rights to men, feminism today is no more than female supremacy and misandry. The only thing I see it used for is to silence opposition, claim the moral high ground, and allow people to be professional victims.
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment18">
+                            <img src="coments/steinmen/4.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Michelle Maffei</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">Love feminism, we need more women (and men too because of our paternal society, men get hit by women) into it. Every human being should know no one in this life will give you anything for free, one must fight for it to get it.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment17">
+                            <img src="coments/womens-lib/5.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>William R Hall</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text"> Now there is no choice. Most women must go to work and leave the children at child care.</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment16">
+                            <img src="coments/like-a-girl/6.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Little Beauty</b><u> 6 meses atrás</u>
+                                </div>
+                                <div class="coments-text">#likeagirl</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment19">
+                            <img src="coments/chimamanda/14.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Myelinator</b><u> 9 meses atrás</u>
+                                </div>
+                                <div class="coments-text">We should all be egalitarian, not feminist.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment20">
+                            <img src="coments/kimmel/15.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>s m</b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">i'm all up for gender equality and sure woman have it crap. but not once did this guy say anything about how bad men have in situations. If you want GENDER equality , that means both genders should be equal.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment22">
+                            <img src="coments/obama/16.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Luna Bubbles</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I prefer to be egalitarian. It implies EQUALITY because it's inclusive.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment21">
+                            <img src="coments/steinmen/17.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Navy XA</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm NOT A FEMINIST,...because I believe in gender equality! I believe that women should be treated the same in every aspect of life, and women should treat men the same in every aspect of life! Truly honest women believe in gender equality,.....BUT feminists DO NOT believe in gender equality! It's very sad, but unfortunately their is no argument to be had there! Good luck being a feminist...............
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment23">
+                            <img src="coments/womens-lib/18.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Corky Sebastian-Mincer-Homo-Asshole-Butt-Pirate</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">U never see any hot chicks protesting, just ugly lezzers and mandatory Negroes. No wonder we laugh at the womens movement.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/XjJQBjWYDTs" target="popup" onclick="window.open('https://www.youtube.com/embed/XjJQBjWYDTs  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=300,top=700'); return false;" class="coments" id="coment25">
+                            <img src="coments/like-a-girl/19.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Toonish</b><u> 9 meses atrás</u>
+                                </div>
+                                <div class="coments-text">boys have as much pressure, we have to do everything right﻿</div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <!--                    -->
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/hg3umXU_qWc" target="popup" onclick="window.open('https://www.youtube.com/embed/hg3umXU_qWc','popup','width=400,height=200,titlebar=0, location=no, status=0,left=50,top=150'); return false;" class="coments" id="coment24">
+                            <img src="coments/chimamanda/20.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>XxNINJ4HOBOxX</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">Modern day feminism: "you can have an opinion, but if your opinion differs from mine, you can't have an opinion" ﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/7n9IOH0NvyY " target="popup" onclick="window.open('https://www.youtube.com/embed/7n9IOH0NvyY','popup','width=400,height=200,titlebar=0, location=no, status=0,left=100,top=200'); return false;" class="coments" id="coment26">
+                            <img src="coments/kimmel/21.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Thursday121am </b><u> 2 anos atrás</u>
+                                </div>
+                                <div class="coments-text">The patriarchy is the feminist version of the Illuminati.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Lpgb3ZHKtNI" target="popup" onclick="window.open('https://www.youtube.com/embed/Lpgb3ZHKtNI ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=200'); return false;" class="coments" id="coment27">
+                            <img src="coments/obama/22.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Mr. Stonefallow</b><u> 1 ano atrás</u>
+                                </div>
+                                <div class="coments-text">I'm not surprised Obama would label himself a feminist, his party essentially demands it.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/PxmklZxqkWM " target="popup" onclick="window.open('https://www.youtube.com/embed/PxmklZxqkWM  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment29">
+                            <img src="coments/steinmen/23.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Janki Jan</b><u> 1 mês atrás</u>
+                                </div>
+                                <div class="coments-text">Frankly, I feel ashamed because I being a man, did a lot of those things that she mentioned. Now I cannot change the society but I can definitely change myself. At least, I will try to. And I will raise my son and daughter appropriately, as individuals.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="main-coments">
+                        <a href="https://www.youtube.com/embed/Bug6EyIb_AE" target="popup" onclick="window.open('https://www.youtube.com/embed/Bug6EyIb_AE  ','popup','width=400,height=200,titlebar=0, location=no, status=0,left=700,top=400'); return false;" class="coments" id="coment30">
+                            <img src="coments/womens-lib/18.jpg" class="coments-pic">
+                            <div id="box1">
+                                <div class="coments-username"><b>Corky Sebastian-Mincer-Homo-Asshole-Butt-Pirate</b><u> 11 meses atrás</u>
+                                </div>
+                                <div class="coments-text">U never see any hot chicks protesting, just ugly lezzers and mandatory Negroes. No wonder we laugh at the womens movement.﻿</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        google.load("jquery", "1.3");
+        google.setOnLoadCallback(function() {
+            jQuery(function($) {
+
+                //      var audio = new Audio('dc-pnr-final.mp3');
+                //            audio.play();
+                //            audio.volume=1;
+
+//                document.getElementById('front').style.top = "90px";
+//
+                $("#editorial2").css({
+                    'padding-top': '400px',
+                }, 150, 'swing');
+
+                
+                
+             
+
+
+                $("#image-pequeno").hide();
+                $("#image-pequeno2").hide();
+                $("#image-medio").hide();
+                $("#image-grande").hide();
+
+                document.getElementById('coment1').addEventListener("mouseover", showshow1);
+                document.getElementById('coment1').addEventListener("mouseout", hidehide1);
+                document.getElementById('coment2').addEventListener("mouseover", showshow2);
+                document.getElementById('coment2').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment3').addEventListener("mouseover", showshow3);
+                document.getElementById('coment3').addEventListener("mouseout", hidehide3);
+                document.getElementById('coment4').addEventListener("mouseover", showshow12);
+                document.getElementById('coment4').addEventListener("mouseout", hidehide12);
+
+                document.getElementById('coment5').addEventListener("mouseover", showshow2);
+                document.getElementById('coment5').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment6').addEventListener("mouseover", showshow3);
+                document.getElementById('coment6').addEventListener("mouseout", hidehide3);
+
+                document.getElementById('coment7').addEventListener("mouseover", showshow1);
+                document.getElementById('coment7').addEventListener("mouseout", hidehide1);
+                document.getElementById('coment8').addEventListener("mouseover", showshow2);
+                document.getElementById('coment8').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment9').addEventListener("mouseover", showshow3);
+                document.getElementById('coment9').addEventListener("mouseout", hidehide3);
+                document.getElementById('coment10').addEventListener("mouseover", showshow12);
+                document.getElementById('coment10').addEventListener("mouseout", hidehide12);
+
+                document.getElementById('coment11').addEventListener("mouseover", showshow2);
+                document.getElementById('coment11').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment12').addEventListener("mouseover", showshow3);
+                document.getElementById('coment12').addEventListener("mouseout", hidehide3);
+
+                document.getElementById('coment13').addEventListener("mouseover", showshow1);
+                document.getElementById('coment13').addEventListener("mouseout", hidehide1);
+                document.getElementById('coment14').addEventListener("mouseover", showshow2);
+                document.getElementById('coment14').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment15').addEventListener("mouseover", showshow3);
+                document.getElementById('coment15').addEventListener("mouseout", hidehide3);
+                document.getElementById('coment16').addEventListener("mouseover", showshow12);
+                document.getElementById('coment16').addEventListener("mouseout", hidehide12);
+
+                document.getElementById('coment17').addEventListener("mouseover", showshow2);
+                document.getElementById('coment17').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment18').addEventListener("mouseover", showshow3);
+                document.getElementById('coment18').addEventListener("mouseout", hidehide3);
+
+                document.getElementById('coment19').addEventListener("mouseover", showshow1);
+                document.getElementById('coment19').addEventListener("mouseout", hidehide1);
+                document.getElementById('coment20').addEventListener("mouseover", showshow2);
+                document.getElementById('coment20').addEventListener("mouseout", hidehide2);
+
+                document.getElementById('coment21').addEventListener("mouseover", showshow3);
+                document.getElementById('coment21').addEventListener("mouseout", hidehide3);
+                document.getElementById('coment22').addEventListener("mouseover", showshow12);
+                document.getElementById('coment22').addEventListener("mouseout", hidehide12);
+
+                document.getElementById('coment23').addEventListener("mouseover", showshow2);
+                document.getElementById('coment23').addEventListener("mouseout", hidehide2);
+                document.getElementById('coment24').addEventListener("mouseover", showshow3);
+                document.getElementById('coment24').addEventListener("mouseout", hidehide3);
+
+                document.getElementById('coment25').addEventListener("mouseover", showshow3);
+                document.getElementById('coment25').addEventListener("mouseout", hidehide3);
+
+                document.getElementById('coment26').addEventListener("mouseover", showshow1);
+                document.getElementById('coment26').addEventListener("mouseout", hidehide1);
+                document.getElementById('coment27').addEventListener("mouseover", showshow2);
+                document.getElementById('coment27').addEventListener("mouseout", hidehide2);
+
+
+                document.getElementById('coment29').addEventListener("mouseover", showshow12);
+                document.getElementById('coment29').addEventListener("mouseout", hidehide12);
+
+                document.getElementById('coment30').addEventListener("mouseover", showshow2);
+                document.getElementById('coment30').addEventListener("mouseout", hidehide2);
+
+
+
+                function showshow1() {
+                    //            $("#bigbox1").show();
+                    $("#image-pequeno").show();
+                    $("#image-medio").hide();
+                    $("#image-grande").hide();
+                }
+
+                function showshow12() {
+                    //            $("#bigbox1").show();
+                    $("#image-pequeno").hide();
+                    $("#image-pequeno2").show();
+                    $("#image-medio").hide();
+                    $("#image-grande").hide();
+                }
+
+                function showshow2() {
+                    $("#image-pequeno").hide();
+                    $("#image-medio").show();
+                    $("#image-grande").hide();
+                }
+
+                function showshow3() {
+                    $("#image-pequeno").hide();
+                    $("#image-medio").hide();
+                    $("#image-grande").show();
+                }
+
+                function hidehide1() {
+                    //            $("#bigbox1").hide();
+                    $("#image-pequeno").hide();
+                    //            $("#question2").hide();
+                }
+
+                function hidehide12() {
+                    //            $("#bigbox1").hide();
+                    $("#image-pequeno2").hide();
+                    //            $("#question2").hide();
+                }
+
+                function hidehide2() {
+                    //            $("#bigbox1").hide();
+                    //            $("#question1").hide();
+                    $("#image-medio").hide();
+                }
+
+                function hidehide3() {
+                    //            $("#bigbox1").hide();
+                    //            $("#question1").hide();
+                    $("#image-grande").hide();
+                }
+
+
+
+            });
+        });
+
+
+        function hoverhide() {
+            
+            document.getElementById("front").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
+            document.getElementById("front").style.transition = "all 0.2s"; // Standard syntax
+            document.getElementById("back").style.WebkitTransition = "all 0.2s"; // Code for Safari 3.1 to 6.0
+            document.getElementById("back").style.transition = "all 0.2s"; // Standard syntax
+            
+
+        }
+
+    </script>
+
+</body>
+
+</html>
