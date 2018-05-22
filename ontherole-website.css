@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-Helvetica, sans-serif;    
+font-family:Helvetica, sans-serif;    
 }
 
 #main {
