@@ -73,8 +73,9 @@ font-family:Helvetica, sans-serif;
 /*    margin-top: -14px;*/
 }
 
+
 #editorial {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     height: 80%;
     display: inline-grid;
@@ -83,7 +84,7 @@ font-family:Helvetica, sans-serif;
     align-self: center;
     align-content: center;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 5%;
     padding-right: 10%;
 }
 
@@ -93,14 +94,15 @@ font-family:Helvetica, sans-serif;
 /*    padding-top: 30px;*/
     display: flex;
     box-sizing: content-box;
-    font-size: 33px;
+    font-size: 40px;
     color: white;
-    
+    font-family: 'antigoni';
     text-align: left;
     vertical-align: top;
     align-self: center;
     padding-top: 400px;
 }
+
 
 /*SEPARATOR*/
 
