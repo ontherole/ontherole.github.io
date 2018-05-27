@@ -300,8 +300,8 @@ font-family:Helvetica, sans-serif;
     width: 300px;
     position: absolute;
     z-index: 3000;
-    
-    
+    display: none;
 }
+
 
 
