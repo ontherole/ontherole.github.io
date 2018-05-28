@@ -8,7 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-font-family:Helvetica, sans-serif;    
+font-family:Helvetica, sans-serif; 
+  
 }
 
 #main {
@@ -98,6 +99,7 @@ font-family:Helvetica, sans-serif;
     font-size: 40px;
     color: white;
     font-family: Helvetica, sans-serif;
+    font-weight: 100;
     text-align: left;
     vertical-align: top;
     align-self: center;
